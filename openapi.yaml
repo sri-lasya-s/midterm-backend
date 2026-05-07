@@ -9,8 +9,8 @@ info:
 servers:
 
   - url: https://midterm-backend-skbz.onrender.com
-  
-  - url: http://localhost:3000
+
+ 
 
 paths:
   /:
