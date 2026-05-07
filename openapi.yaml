@@ -5,7 +5,11 @@ info:
   description: API for managing UX research studies
   version: 1.0.0
 
+
 servers:
+
+  - url: https://midterm-backend-skbz.onrender.com
+  
   - url: http://localhost:3000
 
 paths:
