@@ -8,7 +8,7 @@ const api =
   new DefaultApi()
 
 api.apiClient.basePath =
-  "http://localhost:3000"
+  "https://midterm-backend-skbz.onrender.com"
 
 document.querySelector('#app').innerHTML = `
 
