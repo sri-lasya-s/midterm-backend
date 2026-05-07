@@ -203,17 +203,17 @@ dist
 # Live URLs
 
 ## Frontend
-
+https://ux-study-frontend.onrender.com/
 
 
 
 ## Backend
-
+https://midterm-backend-skbz.onrender.com
 
 
 
 ## Swagger
-
+https://midterm-backend-skbz.onrender.com/docs
 
 
 
