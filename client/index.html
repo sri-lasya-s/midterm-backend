@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>
+    UX Research Study Tracker
+  </title>
+
+  <style>
+
+    body {
+      font-family: Arial;
+      margin: 40px;
+      background: #f5f5f5;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    input,
+    select,
+    button {
+
+      margin: 5px;
+      padding: 10px;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .study {
+
+      background: white;
+
+      padding: 10px;
+
+      margin-top: 10px;
+
+      border-radius: 8px;
+    }
+
+    .section {
+
+      margin-top: 20px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <h1>
+    UX Research Study Tracker
+  </h1>
+
+  <h2>Create Study</h2>
+
+  <input
+    type="text"
+    id="studyTitle"
+    placeholder="Study Title"
+  />
+
+  <select id="method">
+
+    <option value="Interview">
+      Interview
+    </option>
+
+    <option value="Survey">
+      Survey
+    </option>
+
+    <option value="UsabilityTest">
+      UsabilityTest
+    </option>
+
+  </select>
+
+  <input
+    type="number"
+    id="participants"
+    placeholder="Participants"
+  />
+
+  <select id="status">
+
+    <option value="Active">
+      Active
+    </option>
+
+    <option value="Planned">
+      Planned
+    </option>
+
+    <option value="Done">
+      Done
+    </option>
+
+  </select>
+
+  <button onclick="createStudy()">
+    Create Study
+  </button>
+
+  <hr />
+
+  <button onclick="loadStudies()">
+    Load All Studies
+  </button>
+
+  <button onclick="loadActiveStudies()">
+    Load Active Studies
+  </button>
+
+  <button onclick="deleteStudy()">
+    Delete Study
+  </button>
+
+  <div class="section">
+
+    <h2>
+      Get Study By ID
+    </h2>
+
+    <input
+      type="text"
+      id="getStudyId"
+      placeholder="Enter Study ID"
+    />
+
+    <button onclick="getStudyById()">
+      Get Study
+    </button>
+
+  </div>
+
+  <div class="section">
+
+    <h2>
+      Update Study
+    </h2>
+
+    <input
+      type="text"
+      id="updateId"
+      placeholder="Study ID"
+    />
+
+    <input
+      type="text"
+      id="updateTitle"
+      placeholder="New Title"
+    />
+
+    <select id="updateMethod">
+
+      <option value="Interview">
+        Interview
+      </option>
+
+      <option value="Survey">
+        Survey
+      </option>
+
+      <option value="UsabilityTest">
+        UsabilityTest
+      </option>
+
+    </select>
+
+    <input
+      type="number"
+      id="updateParticipants"
+      placeholder="Participants"
+    />
+
+    <select id="updateStatus">
+
+      <option value="Active">
+        Active
+      </option>
+
+      <option value="Planned">
+        Planned
+      </option>
+
+      <option value="Done">
+        Done
+      </option>
+
+    </select>
+
+    <button onclick="updateStudy()">
+      Update Study
+    </button>
+
+  </div>
+
+  <div id="output"></div>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
